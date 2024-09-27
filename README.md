@@ -2,36 +2,36 @@
 
 ## Índice
 
-1. **[Introducción](#introducción)**
-   - [Bienvenida](#bienvenida) 
-   - [¿Qué es un microservicio?](#qué-es-un-microservicio)
-   - [Propósito del Microservicio](#propósito-del-microservicio)
+1. **[Introducción](#Introducción)**
+   - [Bienvenida](#Bienvenida) 
+   - [¿Qué es un microservicio?](#Qué-es-un-microservicio)
+   - [Propósito del Microservicio](#Propósito-del-Microservicio)
 
-2. **[Requisitos Previos](#requisitos-previos)**
-   - [Software necesario](#software-necesario)
-   - [Instalación de herramientas](#instalación-de-herramientas)
+2. **[Requisitos Previos](#Requisitos-Previos)**
+   - [Software necesario](#Software-necesario)
+   - [Instalación de herramientas](#Instalación-de-herramientas)
 
-3. **[Configuración del Microservicio](#configuración-del-microservicio)**
-   - [Clonar el Repositorio](#clonar-el-repositorio)
-   - [Configuración del Proyecto](#configuración-del-proyecto)
-   - [Dependencias necesarias](#dependencias-necesarias)
+3. **[Configuración del Microservicio](#Configuración-del-Microservicio)**
+   - [Clonar el Repositorio](#Clonar-el-Repositorio)
+   - [Configuración del Proyecto](#Configuración-del-Proyecto)
+   - [Dependencias necesarias](#Dependencias-necesarias)
 
-4. **[Base de Datos](#base-de-datos)**
-   - [Configuración de la base de datos](#configuración-de-la-base-de-datos)
-   - [Importar base de datos desde el archivo DB](#importar-base-de-datos-desde-el-archivo-db)
+4. **[Base de Datos](#Base-de-Datos)**
+   - [Configuración de la base de datos](#Configuración-de-la-base-de-datos)
+   - [Importar base de datos desde el archivo DB](#Importar-base-de-datos-desde-el-archivo-dDB)
 
-5. **[Ejecución del Microservicio](#ejecución-del-microservicio)**
-   - [Ejecutar el microservicio](#ejecutar-el-microservicio)
-   - [Probar los Endpoints](#probar-los-endpoints)
+5. **[Ejecución del Microservicio](#Ejecución-del-Microservicio)**
+   - [Ejecutar el microservicio](#Ejecutar-el-microservicio)
+   - [Probar los Endpoints](#Probar-los-Endpoints)
 
-6. **[Descripción de los Endpoints](#descripción-de-los-endpoints)**
+6. **[Descripción de los Endpoints](#Descripción-de-los-Endpoints)**
    - [/auth/signup](#authsignup)
    - [/auth/login](#authlogin)
    - [/auth/users](#authusers)
      (Extra)
 
 7. **[Tests](#tests)**
-   - [Ejecucion de Tests](#ejecucion-de-tests)
+   - [Ejecucion de Tests](#Ejecucion-de-Tests)
 
 ---
 
