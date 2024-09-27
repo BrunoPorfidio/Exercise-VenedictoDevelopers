@@ -26,7 +26,7 @@ public class SecurityConfig {
         http
             .csrf().disable()
             .authorizeRequests()
-            .requestMatchers("/auth/signup", "/auth/login", "/auth/users").permitAll()
+            .requestMatchers("/auth/sign-up", "/auth/login", "/auth/users").permitAll()
             .anyRequest().authenticated()
             .and()
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);

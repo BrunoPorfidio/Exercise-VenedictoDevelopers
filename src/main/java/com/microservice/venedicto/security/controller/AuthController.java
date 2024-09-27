@@ -49,7 +49,7 @@ public class AuthController {
         return matcher.matches();
     }
 
-    @PostMapping("/signup")
+    @PostMapping("/sign-up")
     public ResponseEntity<?> registerUser(@Valid @RequestBody User user) {
         try {
             //Asignamos la fecha de creacion, y volvemos verdadero que el Usuario esta Activo.
@@ -59,6 +59,9 @@ public class AuthController {
             // Validar email y si el Email no es valido retorna un BAD_REQUEST.
             if (!isValidEmail(user.getEmail())) {
                 return new ResponseEntity<>("Invalid email format", HttpStatus.BAD_REQUEST);
+            }
+            if (userRepository.existsByEmail(user.getEmail())) {
+                return createErrorResponse("Email Already Exist", HttpStatus.BAD_REQUEST);
             }
 
             // Validar contraseña
