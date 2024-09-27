@@ -309,7 +309,7 @@ Cuerpo de la Solicitud (JSON):
 }
 ```
 
-# 7. Tests
+# Tests
 
 ## Ejecucion de Tests
 
