@@ -3,35 +3,35 @@
 ## Índice
 
 1. **[Introducción](#Introducción)**
-   - [Bienvenida](#Bienvenida) 
-   - [¿Qué es un microservicio?](#Qué-es-un-microservicio)
-   - [Propósito del Microservicio](#Propósito-del-Microservicio)
+   - Bienvenida 
+   - ¿Qué es un microservicio?
+   - Propósito del Microservicio
 
 2. **[Requisitos Previos](#Requisitos-Previos)**
-   - [Software necesario](#Software-necesario)
-   - [Instalación de herramientas](#Instalación-de-herramientas)
+   - Software necesario
+   - Instalación de herramientas
 
 3. **[Configuración del Microservicio](#Configuración-del-Microservicio)**
-   - [Clonar el Repositorio](#Clonar-el-Repositorio)
-   - [Configuración del Proyecto](#Configuración-del-Proyecto)
-   - [Dependencias necesarias](#Dependencias-necesarias)
+   - Clonar el Repositorio
+   - Configuración del Proyecto
+   - Dependencias necesarias
 
 4. **[Base de Datos](#Base-de-Datos)**
-   - [Configuración de la base de datos](#Configuración-de-la-base-de-datos)
-   - [Importar base de datos desde el archivo DB](#Importar-base-de-datos-desde-el-archivo-dDB)
+   - Configuración de la base de datos
+   - Importar base de datos desde el archivo DB
 
 5. **[Ejecución del Microservicio](#Ejecución-del-Microservicio)**
-   - [Ejecutar el microservicio](#Ejecutar-el-microservicio)
-   - [Probar los Endpoints](#Probar-los-Endpoints)
+   - Ejecutar el microservicio
+   - Probar los Endpoints
 
 6. **[Descripción de los Endpoints](#Descripción-de-los-Endpoints)**
-   - [/auth/signup](#authsignup)
-   - [/auth/login](#authlogin)
-   - [/auth/users](#authusers)
+   - /auth/signup
+   - /auth/login
+   - /auth/users
      (Extra)
 
-7. **[Tests](#tests)**
-   - [Ejecucion de Tests](#Ejecucion-de-Tests)
+7. **[Tests](#Tests)**
+   - Ejecucion de Tests
 
 ---
 
