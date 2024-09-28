@@ -43,11 +43,12 @@ public class AuthController {
 
     // Método para validar contraseña
     private boolean isValidPassword(String password) {
-        String PASSWORD_REGEX = "^(?=.*[A-Z])(?=.*[0-9]{2})(?=.*[a-z]).{8,12}$";
-        Pattern pattern = Pattern.compile(PASSWORD_REGEX);
-        Matcher matcher = pattern.matcher(password);
-        return matcher.matches();
-    }
+    String PASSWORD_REGEX = "^(?=.*[A-Z])(?!.*[A-Z].*[A-Z])(?=(.*\\d.*\\d))(?!.*\\d.*\\d.*\\d)(?=.*[a-z]).{8,12}$";
+    Pattern pattern = Pattern.compile(PASSWORD_REGEX);
+    Matcher matcher = pattern.matcher(password);
+    return matcher.matches();
+}
+
 
     @PostMapping("/sign-up")
     public ResponseEntity<?> registerUser(@Valid @RequestBody User user) {
@@ -58,7 +59,7 @@ public class AuthController {
 
             // Validar email y si el Email no es valido retorna un BAD_REQUEST.
             if (!isValidEmail(user.getEmail())) {
-                return new ResponseEntity<>("Invalid email format", HttpStatus.BAD_REQUEST);
+                return createErrorResponse("Invalid email format", HttpStatus.BAD_REQUEST);
             }
             if (userRepository.existsByEmail(user.getEmail())) {
                 return createErrorResponse("Email Already Exist", HttpStatus.BAD_REQUEST);
@@ -66,7 +67,8 @@ public class AuthController {
 
             // Validar contraseña
             if (!isValidPassword(user.getPassword())) {
-                return new ResponseEntity<>("Password must meet the criteria", HttpStatus.BAD_REQUEST);
+//                return new ResponseEntity<>(", HttpStatus.BAD_REQUEST);
+                return createErrorResponse("Password must meet the criteria", HttpStatus.BAD_REQUEST);
             }
 
             // Crea el Usuario
