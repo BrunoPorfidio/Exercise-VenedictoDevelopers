@@ -67,7 +67,6 @@ public class AuthController {
 
             // Validar contraseña
             if (!isValidPassword(user.getPassword())) {
-//                return new ResponseEntity<>(", HttpStatus.BAD_REQUEST);
                 return createErrorResponse("Password must meet the criteria", HttpStatus.BAD_REQUEST);
             }
 
@@ -81,11 +80,6 @@ public class AuthController {
             // Asignar la última fecha de login
             createdUser.setLastLogin(LocalDateTime.now());
             userRepository.save(createdUser);
-
-            // Convert to DTO for response
-            List<UserDTO.UserPhoneDTO> phones = user.getPhones().stream()
-                    .map(phone -> new UserDTO.UserPhoneDTO(phone.getNumber(), phone.getCityCode(), phone.getContryCode()))
-                    .collect(Collectors.toList());
 
             // Crear la respuesta con los campos solicitados
             UserResponseDTO userResponseDTO = new UserResponseDTO(
