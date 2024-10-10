@@ -261,7 +261,7 @@ Cuerpo de la Solicitud (JSON):
 
 Método: POST
 
-Descripción: Realiza una llamda genereal a todos los Usuasios creados.
+Descripción: Realiza una llamda genereal a todos los Usuarios creados.
 
 Cuerpo de la Solicitud (JSON):
 
@@ -329,7 +329,7 @@ una vez en Postman, dirigase a la siguiente ruta:
 
 * File → Import → Seleccione el archivo Json.
   
-# Les dejo unas imagenes de como bederian tener sus Postman:
+# Les dejo unas imagenes de como deberian tener sus Postman:
 
 * /auth/sign-up
 <img src="https://i.postimg.cc/jSfL0QVc/image-2024-09-27-060837346.png" alt="Auth/sign-up Image" width="600">
